@@ -8647,7 +8647,7 @@ form {
   margin-block-end: 0;
 }
 
-form.wpcf7-form input.invalid {
+form.contact-us-form input.invalid {
   border: 2px solid red;
   box-sizing: border-box;
 }
