@@ -53,7 +53,7 @@
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #333333;
@@ -66,34 +66,34 @@
    * `article` contexts in Chrome, Firefox, and Safari.
    */
   h1, h2, h3, h4, h5, h6 {
-    margin-top: .5rem;
-    margin-bottom: 1rem;
+    margin-top: 8px;
+    margin-bottom: 16px;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
     color: inherit; }
   
   h1 {
-    font-size: 2.5rem; }
+    font-size: 40px; }
   
   h2 {
-    font-size: 2rem; }
+    font-size: 32px; }
   
   h3 {
-    font-size: 1.75rem; }
+    font-size: 28px; }
   
   h4 {
-    font-size: 1.5rem; }
+    font-size: 24px; }
   
   h5 {
-    font-size: 1.25rem; }
+    font-size: 20px; }
   
   h6 {
-    font-size: 1rem; }
+    font-size: 16px; }
   
   p {
     margin-top: 0;
-    margin-bottom: .9rem; }
+    margin-bottom: 14px; }
   
   /* Grouping content
      ========================================================================== */
@@ -117,7 +117,7 @@
   pre {
     font-family: monospace;
     /* 1 */
-    font-size: 1em;
+    font-size: 16px;
     /* 2 */
     white-space: pre-wrap; }
   
@@ -167,7 +167,7 @@
   samp {
     font-family: monospace, monospace;
     /* 1 */
-    font-size: 1em;
+    font-size: 16px;
     /* 2 */ }
   
   /**
@@ -188,10 +188,10 @@
     vertical-align: baseline; }
   
   sub {
-    bottom: -0.25em; }
+    bottom: -4px; }
   
   sup {
-    top: -0.5em; }
+    top: -8px; }
   
   /* Embedded content
      ========================================================================== */
@@ -312,7 +312,7 @@
   textarea {
     font-family: inherit;
     /* 1 */
-    font-size: 1rem;
+    font-size: 16px;
     /* 1 */
     line-height: 1.5;
     /* 1 */
@@ -332,7 +332,7 @@
     width: 100%;
     border: solid 1px #666666;
     border-radius: 3px;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s; }
@@ -410,8 +410,8 @@
             user-select: none;
     background-color: transparent;
     border: 1px solid #CC3366;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 8px 16px;
+    font-size: 16px;
     border-radius: 3px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -438,7 +438,7 @@
    * Correct the padding in Firefox.
    */
   fieldset {
-    padding: 0.35em 0.75em 0.625em; }
+    padding: 6px 12px 10px; }
   
   /**
    * 1. Correct the text wrapping in Edge and IE.
@@ -532,7 +532,7 @@
     background-color: transparent;
     width: 100%;
     margin-bottom: 15px;
-    font-size: 0.9em;
+    font-size: 14px;
     border-spacing: 0;
     border-collapse: collapse; }
     table th,
@@ -545,7 +545,7 @@
       font-weight: bold; }
     table thead th,
     table tfoot th {
-      font-size: 1em; }
+      font-size: 16px; }
     table caption + thead tr:first-child th,
     table caption + thead tr:first-child td,
     table caption + thead tr:first-child th,
@@ -566,7 +566,7 @@
       border-top: 2px solid #cccccc; }
     @media (max-width: 767px) {
       table table {
-        font-size: 0.8em; }
+        font-size: 13px; }
         table table th,
         table table td {
           padding: 7px;
@@ -651,7 +651,7 @@
         font-family: "Average Sans", Sans-serif;
         font-size: 24px;
         text-transform: none;
-        line-height: 1em;
+        line-height: 16px;
     }
     
     .elementor-kit-6 h4 {
@@ -712,7 +712,7 @@ html {
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     color: #333;
@@ -722,8 +722,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: .5rem;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 16px;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
@@ -731,32 +731,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size:2.5rem
+    font-size:40px
 }
 
 h2 {
-    font-size:2rem
+    font-size:32px
 }
 
 h3 {
-    font-size:1.75rem
+    font-size:28px
 }
 
 h4 {
-    font-size:1.5rem
+    font-size:18px
 }
 
 h5 {
-    font-size:1.25rem
+    font-size:21px
 }
 
 h6 {
-    font-size:1rem
+    font-size:16px
 }
 
 p {
     margin-top: 0;
-    margin-bottom:.9rem
+    margin-bottom:14px
 }
 
 hr {
@@ -768,7 +768,7 @@ hr {
 
 pre {
     font-family: monospace;
-    font-size: 1em;
+    font-size: 16px;
     white-space:pre-wrap
 }
 
@@ -804,7 +804,7 @@ b, strong {
 
 code, kbd, samp {
     font-family: monospace, monospace;
-    font-size:1em
+    font-size:16px
 }
 
 small {
@@ -819,11 +819,11 @@ sub, sup {
 }
 
 sub {
-    bottom:-.25em
+    bottom:-4px
 }
 
 sup {
-    top:-.5em
+    top:-8px
 }
 
 img {
@@ -923,7 +923,7 @@ label {
 
 button, input, optgroup, select, textarea {
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.5;
     margin:0
 }
@@ -932,7 +932,7 @@ input[type=date], input[type=email], input[type=number], input[type=password], i
     width: 100%;
     border: 1px solid #666;
     border-radius: 3px;
-    padding: .5rem 1rem;
+    padding: 8px 16px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition:all .3s
@@ -977,8 +977,8 @@ button, select {
     user-select: none;
     background-color: transparent;
     border: 1px solid #fff;
-    padding: .5rem 1rem;
-    font-size: 1rem;
+    padding: 8px 16px;
+    font-size: 16px;
     border-radius: 3px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -1001,7 +1001,7 @@ button, select {
 }
 
 fieldset {
-    padding:.35em .75em .625em
+    padding:6px 13px 10px
 }
 
 legend {
@@ -1055,7 +1055,7 @@ table {
     background-color: transparent;
     width: 100%;
     margin-bottom: 15px;
-    font-size: .9em;
+    font-size: 14px;
     border-spacing: 0;
     border-collapse:collapse
 }
@@ -1072,7 +1072,7 @@ table th {
 }
 
 table tfoot th, table thead th {
-    font-size:1em
+    font-size:16px
 }
 
 table caption + thead tr:first-child td, table caption + thead tr:first-child th, table colgroup + thead tr:first-child td, table colgroup + thead tr:first-child th, table thead:first-child tr:first-child td, table thead:first-child tr:first-child th {
@@ -1089,7 +1089,7 @@ table tbody + tbody {
 
 @media (max-width: 767px) {
     table table {
-        font-size:.8em
+        font-size:14px
     }
 
     table table td, table table th {
@@ -1118,7 +1118,7 @@ dd, dl, dt, li, ol, ul {
 
 .elementor-51 .elementor-element.elementor-element-4ff32b6a {
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-    padding: 10px 20px 10px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .elementor-51 .elementor-element.elementor-element-4ff32b6a > .elementor-background-overlay {
@@ -1145,6 +1145,7 @@ dd, dl, dt, li, ol, ul {
 
 .elementor-51 .elementor-element.elementor-element-d2f090d:not(.elementor-motion-effects-element-type-background), .elementor-51 .elementor-element.elementor-element-d2f090d > .elementor-motion-effects-container > .elementor-motion-effects-layer {
     background-image: url("../assets/images/hero.jpg");
+    filter: saturate(0.6);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1174,7 +1175,7 @@ dd, dl, dt, li, ol, ul {
     color: #FFFFFF;
     font-size: 41px;
     font-weight: normal;
-    line-height: 1.1em;
+    line-height: 1.16px;
 }
 
 .elementor-51 .elementor-element.elementor-element-6a199b7 > .elementor-container {
@@ -1214,7 +1215,7 @@ dd, dl, dt, li, ol, ul {
 }
 
 .elementor-51 .elementor-element.elementor-element-5fbc720c:not(.elementor-motion-effects-element-type-background) > .elementor-column-wrap, .elementor-51 .elementor-element.elementor-element-5fbc720c > .elementor-column-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-color: #e8f6ff;
+    background-color: #E6E6E7;
 }
 
 .elementor-51 .elementor-element.elementor-element-5fbc720c > .elementor-element-populated, .elementor-51 .elementor-element.elementor-element-5fbc720c > .elementor-element-populated > .elementor-background-overlay, .elementor-51 .elementor-element.elementor-element-5fbc720c > .elementor-background-slideshow {
@@ -1542,6 +1543,7 @@ dd, dl, dt, li, ol, ul {
     }
 
     .elementor-51 .elementor-element.elementor-element-5fbc720c {
+        padding-right: 20px ;
         width: 38.07%;
     }
 
@@ -2296,7 +2298,7 @@ dd, dl, dt, li, ol, ul {
 
 .e-logo-wrapper i {
     color: #fff;
-    font-size:1em
+    font-size:16px
 }
 
 .elementor {
@@ -2329,6 +2331,12 @@ dd, dl, dt, li, ol, ul {
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow:none
+}
+
+.elementor img.logo-square {
+    /* add your styles here */
+    margin-top: 11px;
+    margin-bottom: 6px;
 }
 
 .elementor .elementor-widget:not(.elementor-widget-text-editor):not(.elementor-widget-theme-post-content) figure {
@@ -3822,7 +3830,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
 
 .elementor-message {
     margin: 10px 0;
-    font-size: 1em;
+    font-size: 16px;
     line-height:1
 }
 
@@ -4066,7 +4074,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
 }
 
 .elementor-button-icon svg {
-    width:1em
+    width:16px
 }
 
 .elementor-button-text {
@@ -4441,8 +4449,8 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
 }
 
 .elementor-icon i, .elementor-icon svg {
-    width: 1em;
-    height: 1em;
+    width: 16px;
+    height: 16px;
     position: relative;
     display:block
 }
@@ -4634,7 +4642,7 @@ ul.elementor-icon-list-items.elementor-inline-items .elementor-inline-item {
 }
 
 .elementor-widget .elementor-icon-list-icon svg {
-    width:1em
+    width:16px
 }
 
 .elementor-widget.elementor-list-item-link-full_width a {
@@ -5698,8 +5706,8 @@ body.elementor-page .elementor-widget-menu-anchor {
 }
 
 .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
-    width: 1em;
-    height:1em
+    width: 16px;
+    height:16px
 }
 
 .elementor-widget-text-editor .elementor-drop-cap {
@@ -5729,7 +5737,7 @@ body.elementor-page .elementor-widget-menu-anchor {
 
 .elementor-toggle .elementor-tab-title .elementor-toggle-icon {
     display: inline-block;
-    width:1em
+    width:16px
 }
 
 .elementor-toggle .elementor-tab-title .elementor-toggle-icon.elementor-toggle-icon-right {
@@ -6912,7 +6920,7 @@ button.swiper-pagination-bullet {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     font-size: var(--lightbox-header-icons-size);
-    padding-left: 1em;
+    padding-left: 16px;
     padding-right: 2.6em;
     top: 0;
     -webkit-box-align: center;
@@ -7359,11 +7367,11 @@ button.swiper-pagination-bullet {
 }
 
 .elementor-column-gap-wide > .elementor-row > .elementor-column > .elementor-element-populated {
-    padding:20px
+    padding:30px
 }
 
 .elementor-column-gap-wider > .elementor-row > .elementor-column > .elementor-element-populated {
-    padding:30px
+    padding:20px
 }
 
 @media (min-width: 768px) and(max-width: 1024px) {
@@ -7492,6 +7500,14 @@ button.swiper-pagination-bullet {
     .elementor-column {
         width: 100%
     }
+}
+
+.general-advice h3 {
+    color: #fff;
+}
+
+.general-advice p {
+    color: #fff;
 }
 
 
