@@ -992,7 +992,7 @@ button, select {
 
 [type=button]:focus, [type=button]:hover, [type=submit]:focus, [type=submit]:hover, button:focus, button:hover {
     color: #fff;
-    background-color: #c36;
+    background-color: #314366;
     text-decoration:none
 }
 
@@ -7510,7 +7510,11 @@ button.swiper-pagination-bullet {
     color: #fff;
 }
 
+form {
+    margin-block-end: 0;
+}
 
-
-
-  
+form.wpcf7-form input.invalid {
+    border: 2px solid red;
+    box-sizing: border-box;
+}
