@@ -8651,3 +8651,7 @@ form.contact-us-form input.invalid {
   border: 2px solid red;
   box-sizing: border-box;
 }
+
+.main-blurb p {
+  margin-bottom: 14px;
+}
