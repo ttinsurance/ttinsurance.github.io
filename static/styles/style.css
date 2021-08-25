@@ -4178,9 +4178,22 @@ label {
   align-items: center;
 }
 
-form.contact-us-form .contact-us-form-control-wrap {
-  margin-left: 20px;
-} 
+@media (max-width: 767px) {
+  label {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  label .contact-us-form-control-wrap {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) { 
+  form.contact-us-form .contact-us-form-control-wrap {
+    margin-left: 20px;
+  }   
+}
 
 .tt-insurance-mark-required .tt-insurance-field-label:after {
   content: "*";
