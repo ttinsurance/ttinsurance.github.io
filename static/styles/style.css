@@ -1348,7 +1348,7 @@ ul {
 }
 
 .tt-insurance-content .tt-insurance-element.tt-insurance-element-6a199b7 {
-  padding: 70px 0px 29px 0px;
+  padding: 20px 0px 29px 0px;
 }
 
 .tt-insurance-content
@@ -1917,7 +1917,6 @@ ul {
 
   .tt-insurance-content .tt-insurance-element.tt-insurance-element-5fbc720c {
     padding-right: 20px;
-    width: 38.07%;
   }
 
   .tt-insurance-content .tt-insurance-element.tt-insurance-element-6e9462ea {
@@ -3195,9 +3194,7 @@ h1.entry-title {
 
 .tt-insurance-row {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 @media (max-width: 1024px) {
@@ -3220,10 +3217,7 @@ h1.entry-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.tt-insurance-widget-wrap > .tt-insurance-element {
-  width: 100%;
+  justify-content: space-between;
 }
 
 .tt-insurance-widget {
@@ -4176,6 +4170,17 @@ ul.tt-insurance-icon-list-items.tt-insurance-inline-items
 .tt-insurance-field-label {
   cursor: pointer;
 }
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form.contact-us-form .contact-us-form-control-wrap {
+  margin-left: 20px;
+} 
 
 .tt-insurance-mark-required .tt-insurance-field-label:after {
   content: "*";
