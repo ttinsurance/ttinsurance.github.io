@@ -33,3 +33,17 @@ function _doMail(e) {
     const body = `Name: ${name}\nEmail: ${email}\nMobile: ${mobile}\nCompany: ${company}\nInsurance required: ${insurance}\nAdditional Info: ${info}`;
     location.href = `mailto:thong@ttinsurance.com.au?subject=Website%20Enquiry&body=${encodeURI(body)}`;
 }
+
+function _stickyHeader () {
+    const header = document.querySelector('nav');
+    const headerPosition = header.offsetTop; // gives the offset off the top of this element
+    // get current scroll position
+    const currentScrollPosition = window.pageYOffset;
+    if (currentScrollPosition > headerPosition) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+}
+
+document.addEventListener('scroll', _stickyHeader);
