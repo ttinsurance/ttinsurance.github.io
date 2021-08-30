@@ -8,12 +8,6 @@
     <link rel="dns-prefetch" href="//s.w.org" />
     <link
       rel="stylesheet"
-      href="static/styles/style.css"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
       id="google-fonts-1-css"
       href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CAverage+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.7.2"
       type="text/css"
@@ -36,515 +30,314 @@
       content="static/assets/images/icon-reverse-270x270.png"
     />
     <style type="text/css">
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        color: dimgray;
+        margin: 0 0 0 0;
+        padding: 0;
+      }
+      
+      h3 {
+        margin: 30px 0 30px 0;
+      }
+
+      h4 {
+        margin: 10px 0 10px 0;
+        font-size: 18px;
+      }
+
+      input {
+        border:none;
+        border-radius: 3px;
+        padding: 3px 8px;
+        height: 36px;
+        width: 60%;
+      }
+
+      button {
+        margin-bottom: 20px;
+        float: right;
+        background-color: transparent;
+        color: white;
+        border-radius: 3px;
+        border: 1px solid white;
+        padding: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        
+      }
+
+      button:hover {
+        background-color: #2e4366; 
+        color: white;
+      }
+
+      form.contact-us-form input.invalid {
+        border: 2px solid red;
+        box-sizing: border-box;
+      }
       .site-header {
         display: none;
       }
-      ul.menu li {
-        display: inline;
-        margin: 0 10px;
-        line-height: 30px;
+
+      .nav-container {
+        max-width: 1140px;
+        margin: 0 auto;
       }
-      ul.menu li a {
-        padding: 7px;
-        border-radius: 3px;
-        color: #333;
+
+      .tt-insurance-image {
+        display: block;
+        margin: 20px 0px 20px 20px;
       }
-      ul.menu li a:hover {
-        text-decoration: none;
-        background: #78b800;
-        color: #fff;
+
+      .hero-image {
+        min-height: 400px;
+        background-image: url(static/assets/images/hero.jpg);
+        filter: saturate(0.5);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
-      @media only screen and (max-width: 600px) {
-        ul.menu {
-          padding: 0;
-        }
-        ul.menu li {
-          margin: 0;
-          line-height: 0;
-        }
+
+      .main-content {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 32px;
       }
-      form.contact-us-form p {
-        margin: 0;
+
+      .about-us {
+        margin: 30px 0px 30px 0px;
+      }
+
+      .contact-us {
+        margin-top: 30px;
+      }
+
+      .flex-container {
+        background-color: gainsboro;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+      }
+
+      .flex-container > * {
+        width: 50%;
+      }
+
+      .how-to-contact-us {
+        margin: 0 20px;
+      }
+
+      .contact-us-body {
+        padding-bottom: 5px;
+      }
+
+      .contact-us-form {
+        border-radius: 0 10px 10px 0;
+        background: #909090;
+        margin-block-end: 0;
+      }
+      
+      .form-row label {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .label {
         color: white;
+        margin-right: 20px;
+        width: 40%;
       }
-      form.contact-us-form span {
-        margin: 3px 0 0 0;
+
+      .contact-us-form-body {
+        margin: 20px;
       }
-      form.contact-us-form input {
-        margin: 7px 0;
-        border: none;
+      
+      .form-row {
+        margin-bottom: 16px;
       }
 
       @media (max-width: 767px) {
-        .tt-insurance-element-dcb9eb4 {
-          width: 100%;
-          margin-top: 8px;
+        .flex-container {
+          flex-direction: column;
+        }
+
+        .flex-container > * {
+          width: auto;
+        }
+
+        .contact-us-form {
+          border-radius: 0 0 10px 10px;
+          box-shadow: none;
         }
       }
-
-      form.contact-us-form textarea {
-        margin: 7px 0;
-        border: none;
-        height: 100px;
-      }
-      form.contact-us-form input[type="submit"] {
-        background: #565656;
-        width: 100px;
-        color: white;
-      }
-      form.contact-us-form {
-        border-radius: 3px;
-        padding: 8px 16px;
-        background: #909090;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-      }
-
-      .tt-insurance-element-67d75340 p {
-        margin-bottom: 6px;
-      }
-
-      @media (min-width: 1031px) {
-        .tt-insurance-flex {
-          margin-right: 20px;
-          width: 40%;
-        }
-      }
-
-      @media (min-width: 897px) and (max-width: 1030px) {
-        .tt-insurance-flex {
-          width: 30%;
-        }
-      }
-
-      @media (min-width: 768px) and (max-width: 896px) {
-        .tt-insurance-flex {
-          width: 25%;
-        }
-      }
-
-      @media (min-width: 821px) and (max-width: 896px) {
-        .contact-us-form input {
-          max-width: 300px;
-        }
-      }
-
-      @media (min-width: 768px) and (max-width: 820px) {
-        .contact-us-form input {
-          max-width: 250px;
-        }
-      }
+      /* add more styles here */
     </style>
   </head>
-  <body
-    class="home page-template-default page page-id-content tt-insurance-default tt-insurance-kit-6 tt-insurance-page tt-insurance-page-content e--ua-appleWebkit e--ua-mac e--ua-safari e--ua-webkit"
-  >
+  <body>
     <header class="site-header" role="banner">
-      <div class="site-branding">
-        <h1 class="site-title">
-          <a href="https://ttinsurance.github.io" title="Home" rel="home">
-            T & Thy Insurance
-          </a>
-        </h1>
-        <p class="site-description"></p>
-      </div>
+      <h1 class="site-title">
+        <a href="https://ttinsurance.github.io" title="Home" rel="home">
+          T & Thy Insurance
+        </a>
+      </h1>
     </header>
-
-    <main class="site-main page type-page status-publish hentry" role="main">
-      <div class="page-content">
-        <div class="tt-insurance tt-insurance-content">
-          <div class="tt-insurance-inner">
-            <div class="tt-insurance-section-wrap">
-              <section
-                class="tt-insurance-section tt-insurance-top-section tt-insurance-element tt-insurance-element-4ff32b6a tt-insurance-section-boxed tt-insurance-section-height-default tt-insurance-section-height-default"
-              >
-                <div
-                  class="tt-insurance-container tt-insurance-column-gap-default"
-                >
-                  <div class="tt-insurance-row">
-                    <div
-                      class="tt-insurance-column tt-insurance-col-50 tt-insurance-top-column tt-insurance-element tt-insurance-element-4e0d798b"
-                    >
-                      <div
-                        class="tt-insurance-column-wrap tt-insurance-element-populated"
-                      >
-                        <div class="tt-insurance-widget-wrap">
-                          <div
-                            class="tt-insurance-element tt-insurance-element-1367da1 tt-insurance-widget tt-insurance-widget-image"
-                          >
-                            <div class="tt-insurance-widget-container">
-                              <div class="tt-insurance-image">
-                                <a href="/">
-                                  <img
-                                    src="static/assets/images/logo.png"
-                                    title="tt-insurance-logo-horizontal-sm"
-                                    alt="tt-insurance-logo"
-                                    style="height: 80px"
-                                  />
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section
-                class="tt-insurance-section tt-insurance-top-section tt-insurance-element tt-insurance-element-d2f090d tt-insurance-section-height-min-height tt-insurance-section-boxed tt-insurance-section-height-default tt-insurance-section-items-middle"
-              >
-                <div class="tt-insurance-background-overlay"></div>
-
-                <div
-                  class="tt-insurance-container tt-insurance-column-gap-default"
-                >
-                  <div class="tt-insurance-row">
-                    <div
-                      class="tt-insurance-column tt-insurance-col-100 tt-insurance-top-column tt-insurance-element tt-insurance-element-a3ce133"
-                    ></div>
-                  </div>
-                </div>
-              </section>
-              <section
-                class="tt-insurance-section tt-insurance-top-section tt-insurance-element tt-insurance-element-6a199b7 tt-insurance-section-boxed tt-insurance-section-height-default tt-insurance-section-height-default"
-              >
-                <div
-                  class="tt-insurance-container tt-insurance-column-gap-wider"
-                >
-                  <div class="tt-insurance-row">
-                    <div
-                      class="tt-insurance-column tt-insurance-top-column tt-insurance-element"
-                    >
-                      <div
-                        class="tt-insurance-column-wrap tt-insurance-element-populated"
-                      >
-                        <div class="tt-insurance-widget-wrap">
-                          <div
-                            class="tt-insurance-element tt-insurance-element-2c0547c6 tt-insurance-widget tt-insurance-widget-text-editor"
-                          >
-                            <div class="tt-insurance-widget-container">
-                              <div
-                                class="tt-insurance-text-editor tt-insurance-clearfix main-blurb"
-                              >
-                                <h2>
-                                  <strong
-                                    style="font-size: 32px; line-height: 32px"
-                                    >T & Thy Insurance Pty Ltd</strong
-                                  >
-                                </h2>
-                                <p>
-                                  T & Thy Insurance is a family owned and run
-                                  insurance brokerage.
-                                </p>
-                                <p>
-                                  We are here to help you tackle the burdens of
-                                  insurance. Whether it be for your home,
-                                  business, motor vehicle or strata complex,
-                                  we'll be right there with you.
-                                </p>
-                                <p>
-                                  When it comes to protecting your assets, we
-                                  want you to be well informed and confident in
-                                  the choices you make.
-                                </p>
-                                <p>
-                                  We are laser focused on transparency and
-                                  honesty. Assisting you in any way possible,
-                                  and if a better product cannot be obtained, we
-                                  will be the first to let you know.
-                                </p>
-                                <p>
-                                  If you are motivated to understand how to
-                                  protect your assets and would like our support
-                                  on your journey, please contact us via the
-                                  details below.
-                                </p>
-                                <p>
-                                  T & Thy Insurance, protecting the assets you
-                                  work hard to build.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tt-insurance-column tt-insurance-top-column tt-insurance-element tt-insurance-element-5fbc720c"
-                    >
-                      <div
-                        class="tt-insurance-column-wrap tt-insurance-element-populated"
-                      >
-                        <div class="tt-insurance-widget-wrap">
-                          <div class="tt-insurance-flex">
-                            <section
-                              class="tt-insurance-section tt-insurance-inner-section tt-insurance-element tt-insurance-element-30e5f92 tt-insurance-section-boxed tt-insurance-section-height-default tt-insurance-section-height-default"
-                            >
-                              <div
-                                class="tt-insurance-container tt-insurance-column-gap-default"
-                              >
-                                <div class="tt-insurance-row">
-                                  <div
-                                    class="tt-insurance-column tt-insurance-col-100 tt-insurance-inner-column tt-insurance-element tt-insurance-element-d86adf7"
-                                  >
-                                    <div
-                                      class="tt-insurance-column-wrap tt-insurance-element-populated"
-                                    >
-                                      <div class="tt-insurance-widget-wrap">
-                                        <div
-                                          class="tt-insurance-element tt-insurance-element-c5a8029 tt-insurance-widget tt-insurance-widget-image"
-                                        >
-                                          <div
-                                            class="tt-insurance-widget-container"
-                                          >
-                                            <div class="tt-insurance-image">
-                                              <img
-                                                src="static/assets/images/logo-square.png"
-                                                class="logo-square"
-                                                style="height: 100px"
-                                                title="tt-insurance -symbol-rgb"
-                                                alt="tt-insurance-symbol"
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </section>
-                            <div
-                              class="tt-insurance-element tt-insurance-element-3524523e tt-insurance-widget tt-insurance-widget-heading"
-                            >
-                              <div class="tt-insurance-widget-container">
-                                <h2
-                                  class="tt-insurance-heading-title tt-insurance-size-default"
-                                >
-                                  How to contact us
-                                </h2>
-                              </div>
-                            </div>
-                            <div
-                              class="tt-insurance-element tt-insurance-element-67d75340 tt-insurance-widget tt-insurance-widget-text-editor"
-                            >
-                              <div class="tt-insurance-widget-container">
-                                <div
-                                  class="tt-insurance-text-editor tt-insurance-clearfix"
-                                >
-                                  <p>
-                                    For any matters relating to your insurance,
-                                    please contact:
-                                  </p>
-                                  <p>
-                                    <strong>Thong Ho</strong>
-                                  </p>
-                                  <p>Mobile: 0403 126 433</p>
-                                  <p>
-                                    Email:
-                                    <span style="color: #3366ff"
-                                      ><a
-                                        style="color: #3366ff"
-                                        href="mailto:Thong.Ho@ttinsurance.com.au"
-                                        >Thong.Ho@ttinsurance.com.au</a
-                                      ></span
-                                    >
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="tt-insurance-element tt-insurance-element-dcb9eb4 tt-insurance-widget tt-insurance-widget-text-editor"
-                          >
-                            <div class="tt-insurance-widget-container">
-                              <div
-                                class="tt-insurance-text-editor tt-insurance-clearfix"
-                              >
-                                <div lang="en-AU" dir="ltr">
-                                  <div class="screen-reader-response">
-                                    <p
-                                      role="status"
-                                      aria-live="polite"
-                                      aria-atomic="true"
-                                    ></p>
-                                    <ul></ul>
-                                  </div>
-                                  <form
-                                    class="contact-us-form init"
-                                    action="javascript:void(0);"
-                                  >
-                                    <div style="display: none">
-                                      <input
-                                        type="hidden"
-                                        name="_contact-us"
-                                        value="127"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_contact-us_version"
-                                        value="5.4"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_contact-us_locale"
-                                        value="en_AU"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_contact-us_unit_tag"
-                                        value="contact-us-f127-p51-o1"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_contact-us_container_post"
-                                        value="51"
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_contact-us_posted_data_hash"
-                                        value=""
-                                      />
-                                      <input
-                                        type="hidden"
-                                        name="_contact-us_recaptcha_response"
-                                        value="03AGdBq27AAWdDlA08JOfSeWmbKoaUaqoTaSLxk7reFACjqA4e6CkSE1_BkB3JRjOog98DDg3DWzPYMhwRZ4Pvn1zaUQqUTqhsFSc2YodnLLYR5-f_Zya2yZ7u-9tYIvi8fMG7C9PVw_ewq-HTWYzkvU1qY2Qnqr52SEN7EkSbI-NvkdDJTtPBxBWMLHciqP4Cu96ugOIXozoxsm7PVqRMddaHPMov1Ib1JWOTrt3iQb-x2K37wPlBAxhhQhv-TLxta4Ytg4wUAPWFjh9hGTWLQy4yGacmb36Oc__n1alLCQSA8P-6rlT4lxZ0kpRnB3jm9VYuiptbKfR6S4gOgDMBmxCWPigblou6BPmuWta9KybUR08_1seZSqJsTW1cU5B5NsoheKH-yBXxu4V0lK4VVkZOjS_My7B3wnHJX09KJ8OQXXSXQKkxtQ_mEhVeo0mrAghVV6cxKX62inB6UzcMQCVc93w_wFTbQg"
-                                      />
-                                    </div>
-                                    <p>
-                                      <label>
-                                        <span class="label">Name*</span>
-                                        <span
-                                          class="contact-us-form-control-wrap your-name"
-                                          ><input
-                                            type="text"
-                                            name="your-name"
-                                            value=""
-                                            size="40"
-                                            class="contact-us-form-control contact-us-text contact-us-validates-as-required"
-                                            aria-required="true"
-                                            aria-invalid="false"
-                                        /></span>
-                                      </label>
-                                    </p>
-                                    <p>
-                                      <label>
-                                        <span class="label">Email*</span>
-                                        <span
-                                          class="contact-us-form-control-wrap your-email"
-                                          ><input
-                                            type="email"
-                                            name="your-email"
-                                            value=""
-                                            size="40"
-                                            class="contact-us-form-control contact-us-text contact-us-email contact-us-validates-as-required contact-us-validates-as-email"
-                                            aria-required="true"
-                                            aria-invalid="false"
-                                        /></span>
-                                      </label>
-                                    </p>
-                                    <p>
-                                      <label>
-                                        <span class="label">Mobile number*</span>
-                                        <span
-                                          class="contact-us-form-control-wrap mobile"
-                                          ><input
-                                            type="tel"
-                                            name="mobile"
-                                            value=""
-                                            size="40"
-                                            class="contact-us-form-control contact-us-text contact-us-tel contact-us-validates-as-required contact-us-validates-as-tel"
-                                            aria-required="true"
-                                            aria-invalid="false" /></span
-                                        >
-                                      </label>
-                                    </p>
-                                    <p>
-                                      <label>
-                                        <span class="label">Company type</span>
-                                        <span
-                                          class="contact-us-form-control-wrap company"
-                                          ><input
-                                            type="text"
-                                            name="company"
-                                            value=""
-                                            size="40"
-                                            class="contact-us-form-control contact-us-text"
-                                            aria-invalid="false" /></span
-                                        >
-                                      </label>
-                                    </p>
-                                    <p>
-                                      <label>
-                                        <span class="label">Insurance required*</span>
-                                        <span
-                                          class="contact-us-form-control-wrap insurance"
-                                        >
-                                        <input
-                                            type="text"
-                                            name="insurance"
-                                            value=""
-                                            size="40"
-                                            class="contact-us-form-control contact-us-text"
-                                            aria-invalid="false" />
-                                        </span>
-                                      </label>
-                                    </p>
-                                    <p>
-                                      <label>
-                                        <span class="label">Additional info</span>
-                                        <span
-                                          class="contact-us-form-control-wrap additional-info"
-                                        >
-                                        <input
-                                            type="text"
-                                            name="additional-info"
-                                            value=""
-                                            size="40"
-                                            class="contact-us-form-control contact-us-text"
-                                            aria-invalid="false" />
-                                        </span>
-                                      </label>
-                                    </p>
-                                    <p style="display: flex; justify-content: end; padding-top: 10px; padding-bottom: 8px;">
-                                      <button
-                                        onclick="_doMail()"
-                                        class="contact-us-form-control contact-us-submit"
-                                      >
-                                        Contact us
-                                      </button>
-                                    </p>
-                                    <div
-                                      class="contact-us-response-output"
-                                      aria-hidden="true"
-                                    ></div>
-                                  </form>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tt-insurance-column-wrap tt-insurance-element-populated" style="padding: 20px;">
-                      <p style="font-size: 14px">
-                        Thong & Thy Pty Ltd T/as T & Thy Insurance ABN
-                        66 625 891 134, CAR No 001287151 AR No.
-                        001287152 and is an Authorised Representative
-                        of AIIRS Pty Ltd ABN 63 637 580 673 AFSL
-                        520349.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
+    <nav>
+      <div class="nav-container">
+        <div class="tt-insurance-image">
+          <a href="/">
+            <img
+              src="static/assets/images/logo.png"
+              title="tt-insurance-logo-horizontal-sm"
+              alt="tt-insurance-logo"
+              style="height: 80px"
+            />
+          </a>
         </div>
       </div>
+    </nav>
+    <main>
+      <section class="hero-image"></section>
+      <section class="main-content">
+        <section class="about-us">
+          <h2>About us</h2>
+        </section>
+        <section>
+          <article class="about-us-body">
+            <!-- Put this in <p>s -->
+            <p>
+              T & Thy Insurance is a family owned and run insurance brokerage.
+            </p>
+            <p>
+              We are here to help you tackle the burdens of insurance. Whether
+              it be for your home, business, motor vehicle or strata complex,
+              we'll be right there with you.
+            </p>
+            <p>
+              When it comes to protecting your assets, we want you to be well
+              informed and confident in the choices you make.
+            </p>
+            <p>
+              We are laser focused on transparency and honesty. Assisting you in
+              any way possible, and if a better product cannot be obtained, we
+              will be the first to let you know.
+            </p>
+            <p>
+              If you are motivated to understand how to protect your assets and
+              would like our support on your journey, please contact us via the
+              details below.
+            </p>
+            <p>
+              T & Thy Insurance, protecting the assets you work hard to build.
+            </p>
+          </article>
+        </section>
+        <section class="contact-us">
+          <div class="flex-container">
+            <div class="how-to-contact-us">
+              <img
+                src="static/assets/images/logo-square.png"
+                class="logo-square"
+                style="height: 100px; margin-top: 20px"
+                title="tt-insurance -symbol-rgb"
+                alt="tt-insurance-symbol"
+              />
+              <h3>How to contact us</h3>
+              <article class="contact-us-body">
+                <p>
+                  For any matters relating to your insurance, please contact:
+                </p>
+                <h4>Thong Ho</h4>
+                <p>Mobile: 0403 126 433</p>
+                <p>
+                  Email:
+                  <a href="mailto: Thong.Ho@ttinsurance.com.au"
+                    >Thong.Ho@ttinsurance.com.au</a
+                  >
+                </p>
+              </article>
+            </div>
+            <form class="contact-us-form" action="javascript:void(0);">
+              <section class="contact-us-form-body">
+              <p class="form-row">
+                <label>
+                  <span class="label">Name*</span>
+                  <input
+                    type="text" 
+                    name="your-name" 
+                    value=""
+                    class="field"
+                    aria-required="true"
+                    aria-invalid="false" />
+                </label>
+              </p>
+              <p class="form-row">
+              <label>
+                <span class="label">Email*</span>
+                <input
+                    type="text" 
+                    name="your-email" 
+                    value=""
+                    class="field"
+                    aria-required="true"
+                    aria-invalid="false" />
+                </label>
+              </label>
+              </p>
+              <p class="form-row"><label>
+                <span class="label">Mobile number*</span>
+                <input
+                  type="text" 
+                  name="mobile" 
+                  value=""
+                  class="field"
+                  aria-required="true"
+                  aria-invalid="false" />
+              </label></p>
+              <p class="form-row"><label>
+                <span class="label">Company type</span>
+                <input
+                  type="text" 
+                  name="company" 
+                  value=""
+                  class="field"
+                  aria-required="false"
+                  aria-invalid="false" />
+              </label></p>
+              <p class="form-row"><label>
+                <span class="label">Insurance required</span>
+                <input
+                  type="text" 
+                  name="insurance" 
+                  value=""
+                  class="field"
+                  aria-required="false"
+                  aria-invalid="false" />
+              </label></p>
+              <p class="form-row"><label>
+                <span class="label">Additional info</span>
+                <input
+                  type="text" 
+                  name="additional-info" 
+                  value=""
+                  class="field"
+                  aria-required="false"
+                  aria-invalid="false" />
+              </label></p>
+              <button onclick="_doMail()">Submit</button>
+            </form>
+            </div>
+          </div>
+        </section>
+        <p style="font-size: 14px; margin: 5px 0 30px 0; color: #595959">
+          Thong & Thy Pty Ltd T/as T & Thy Insurance ABN 66 625 891 134, CAR No
+          001287151 AR No.001287152 and is an Authorised Representative of AIIRS
+          Pty Ltd ABN 63 637 580 673 AFSL 520349.
+        </p>
+      </section>
     </main>
-
-    <footer id="site-footer" class="site-footer" role="contentinfo"></footer>
     <script src="static/scripts/index.js"></script>
   </body>
 </html>
