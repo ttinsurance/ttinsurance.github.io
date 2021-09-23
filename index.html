@@ -12,6 +12,12 @@
       href="https://fonts.googleapis.com/css?family=Source Sans Pro"
       type="text/css"
       media="all"
+    />    
+    <link
+      rel="stylesheet"
+      href="static/font-awesome/css/font-awesome.min.css"
+      type="text/css"
+      media="all"
     />
     <link rel="canonical" href="https://ttinsurance.github.io" />
     <link rel="shortlink" href="https://ttinsurance.github.io" />
@@ -48,6 +54,7 @@
       h4 {
         margin: 10px 0 10px 0;
         font-size: 18px;
+        text-align: center;
       }
 
       nav {
@@ -98,9 +105,27 @@
         display: none;
       }
 
+      .social-links ul {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .social-links li {
+        list-style-type: none;
+        padding: 0;
+        margin: 8px 5px;
+        font-size: 25px;
+      }
+
+      .social-links a:visited {
+        color: dimgray;
+      }
+
       .nav-container {
         max-width: 1140px;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
       }
 
       .tt-insurance-image {
@@ -188,6 +213,16 @@
       .contact-us-form-body {
         margin: 20px;
       }
+
+      .profile-pic {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+        margin: 20px auto 20px auto;
+
+      }
       
       .form-row {
         margin-bottom: 16px;
@@ -213,6 +248,7 @@
       }
       /* add more styles here */
     </style>
+
   </head>
   <body>
     <header class="site-header" role="banner">
@@ -233,6 +269,26 @@
               style="height: 80px"
             />
           </a>
+        </div>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/T.Thy.Insurance/" aria-label="facebook page">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li style="margin:8px 15px 0 15px;">
+              <a href="https://www.instagram.com/tt.insurance/" aria-label="instagram page">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/t-thy-insurance/about/" aria-label="linkedin page">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+
         </div>
       </div>
     </nav>
@@ -276,26 +332,25 @@
           <div class="flex-container">
             <div class="how-to-contact-us">
               <h3>How to contact us</h3>
-              <article class="contact-us-body">
+              <article class="contact-us-body" style="margin-bottom: 30px;">
                 <p>
                   For any matters relating to your insurance, please contact:
                 </p>
+                
+                <img
+                src="static/assets/images/thong.jpeg"
+                class="profile-pic"
+                />
                 <h4>Thong Ho</h4>
-                <p>Mobile: 0403 126 433</p>
-                <p>
-                  Email:
+                <p style="text-align: center;">0403 126 433</p>
+                <p style="text-align: center;">
+                  
                   <a href="mailto: Thong.Ho@ttinsurance.com.au"
                     >Thong.Ho@ttinsurance.com.au</a
                   >
                 </p>
               </article>
-              <div class="align-logo">
-              <img
-              src="static/assets/images/logo-square.png"
-              class="logo-square"
-              title="tt-insurance -symbol-rgb"
-              alt="tt-insurance-symbol"
-            />
+              <div class="align-contact">
             </div>
             </div>
             <form class="contact-us-form" action="javascript:void(0);">
